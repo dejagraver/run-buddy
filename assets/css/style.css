@@ -1,30 +1,13 @@
+body {
+  /* more on this crazy alphanumerical value in a minute! */
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 /* apply styles to <header> */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
-}
-
-/* Applies 20px to every side (top, right, bottom, left) */
-header {
-  padding: 20px;
-}
-
-/* Applies 20px to the top and bottom, then 35px to the left and right */
-header {
-  padding: 20px 35px;
-}
-
-/* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left (in that specific clockwise order) */
-header {
-  padding: 10px 15px 20px 25px;
-}
-
-/* Explicitly list the side it should be applied to*/
-header {
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  padding-left: 25px;
 }
 
 header h1 {
@@ -65,7 +48,10 @@ header h1 {
   margin: 0;
   display: inline;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 footer {
   background: #fce138;
   width: 100%;
@@ -93,4 +79,61 @@ footer a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+section {
+  padding: 60px;
+}
+
+/* Hero Style Start */
+
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+/* Hero Style End */
+
+
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #024e76;
+}
+
+.hero-form {
+  border: 3px solid #024e76;
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Hero Style Start */
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* Hero Style End */
+
+.hero-form {
+  border: 3px solid #024e76;
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
 }
