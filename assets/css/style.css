@@ -259,8 +259,9 @@ section {
 .trainer {
   width: 900px;
   margin: 0 auto 30px auto;
-  background: #02e76;
-  color: #fce139;
+  background: #024e76;
+  color: #fce138;
+  overflow: auto;
 }
 
 .trainer img {
@@ -273,3 +274,12 @@ section {
   float: left;
   width: 65%;
 }
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
