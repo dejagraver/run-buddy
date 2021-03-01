@@ -11,6 +11,13 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 header h1 {
@@ -90,9 +97,23 @@ footer a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%; 
 }
 /* Hero Style End */
+
+header h1 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta h2 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 .hero-form {
   border: 3px solid #024e76;
@@ -101,6 +122,8 @@ footer a {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(252,225,56 0.8);
+  border-radius: 15px;
 }
 
 .hero-form p {
@@ -115,6 +138,7 @@ footer a {
 .hero-form p {
   margin: 5px 0 15px 0;
 }
+
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -137,6 +161,8 @@ footer a {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: rgba(255,255,255, 0.75);
 }
 
 .hero-form label {
@@ -149,6 +175,8 @@ footer a {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 15px;
+
 }
 
 .intro p {
@@ -187,8 +215,7 @@ footer a {
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid #39a6b2;
+  width: 80%;  
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -338,6 +365,8 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 15px;
+
 }
 
 .contact-form button{
@@ -361,6 +390,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -464,3 +494,32 @@ section {
     order: 3;
   }
   }
+
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+  .hero-form button:hover {
+    background-color: #39a6b2;  
+  }
+  
+  .contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+  }
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
+}
