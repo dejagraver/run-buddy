@@ -1,0 +1,3 @@
+[submodule "JS/JS/robot-gladiators"]
+	path = JS/JS/robot-gladiators
+	url = git@github.com:dejagraver/robot-gladiators.git
